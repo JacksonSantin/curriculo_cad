@@ -1,14 +1,20 @@
 <template>
-  <v-container fluid>
-    <v-row>
-      <v-col cols="6">
-        <v-text-field label="teste08" dense v-model="teste08"></v-text-field>
-      </v-col>
-      <v-col cols="6">
-        <v-text-field label="teste09" dense v-model="teste09"></v-text-field>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-form ref="objetivo" lazy-validation>
+    <v-container fluid>
+      <v-row>
+        <v-col cols="12">
+          <v-textarea
+            label="Atuação e habilidades"
+            density="compact"
+            variant="underlined"
+            rows="5"
+            counter
+            v-model="controller.curriculoModel.value.atuacao"
+          ></v-textarea>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-form>
 </template>
 
 <script setup>

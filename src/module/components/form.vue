@@ -16,7 +16,7 @@
       </v-card>
     </template>
     <template v-slot:[`item.${3}`]>
-      <v-card title="Formação" flat>
+      <v-card title="Formação e Cursos" flat>
         <formacao :controller="controller" />
       </v-card>
     </template>
@@ -31,6 +31,11 @@
       </v-card>
     </template>
     <template v-slot:[`item.${6}`]>
+      <v-card title="Idiomas" flat>
+        <idiomas :controller="controller" />
+      </v-card>
+    </template>
+    <template v-slot:[`item.${7}`]>
       <v-card title="Gerar Currículo" flat>
         <gerar-curriculo :controller="controller" />
       </v-card>
@@ -44,6 +49,7 @@ import Objetivo from "./formSteps/objetivo.vue";
 import Formacao from "./formSteps/formacao.vue";
 import Experiencia from "./formSteps/experiencia.vue";
 import Atuacao from "./formSteps/atuacao.vue";
+import Idiomas from "./formSteps/idiomas.vue";
 import GerarCurriculo from "./formSteps/gerarCurriculo.vue";
 
 defineProps({

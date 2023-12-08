@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <form-view :controller="controller" />
+    <form-view ref="form" :controller="controller" />
   </v-container>
 </template>
 
