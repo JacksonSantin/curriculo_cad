@@ -17,7 +17,7 @@
 
     <v-card-text>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Idioma"
             variant="underlined"
@@ -25,7 +25,7 @@
             v-model="item.idioma"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-select
             label="Nível de conhecimento"
             item-value="value"

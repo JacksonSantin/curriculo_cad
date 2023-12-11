@@ -25,7 +25,7 @@
 
     <v-card-text>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <v-select
             label="Tipo"
             item-value="value"
@@ -36,7 +36,7 @@
             v-model="item.tipo"
           ></v-select>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <v-text-field
             label="Número"
             variant="underlined"

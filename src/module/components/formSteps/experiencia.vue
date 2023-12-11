@@ -21,7 +21,7 @@
 
     <v-card-text>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Nome experiência"
             variant="underlined"
@@ -29,7 +29,7 @@
             v-model="item.nomeExperiencia"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Onde trabalhou?"
             variant="underlined"
@@ -37,7 +37,7 @@
             v-model="item.localTrablhado"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Ano de início"
             type="date"
@@ -46,7 +46,7 @@
             v-model="item.anoInicio"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Ano de término"
             type="date"
@@ -56,7 +56,7 @@
             v-model="item.anoFim"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Emprego atual"
             density="compact"

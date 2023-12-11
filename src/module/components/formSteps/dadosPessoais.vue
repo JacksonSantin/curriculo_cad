@@ -2,7 +2,7 @@
   <v-form ref="dadosGerais" lazy-validation>
     <v-container fluid>
       <v-row>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
           <v-text-field
             label="Nome completo"
             variant="underlined"
@@ -11,7 +11,7 @@
             v-model="controller.curriculoModel.value.nome"
           ></v-text-field>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
           <v-text-field
             label="Nacionalidade"
             variant="underlined"
@@ -19,7 +19,7 @@
             v-model="controller.curriculoModel.value.nacionalidade"
           ></v-text-field>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
           <v-text-field
             label="Idade"
             variant="underlined"
@@ -29,7 +29,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-select
             label="Estado Civil"
             item-value="value"
@@ -40,7 +40,7 @@
             v-model="controller.curriculoModel.value.estadoCivil"
           ></v-select>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-select
             label="Sexo"
             item-value="value"
@@ -51,7 +51,7 @@
             v-model="controller.curriculoModel.value.sexo"
           ></v-select>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="Data de nascimento"
             type="date"
@@ -60,7 +60,7 @@
             v-model="controller.curriculoModel.value.dtNascimento"
           ></v-text-field>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="E-mail"
             type="email"
@@ -72,7 +72,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="8">
+        <v-col cols="12" sm="8">
           <v-text-field
             label="Endereço"
             variant="underlined"
@@ -80,7 +80,7 @@
             v-model="controller.curriculoModel.value.endereco[0].rua"
           ></v-text-field>
         </v-col>
-        <v-col cols="2">
+        <v-col cols="12" sm="2">
           <v-text-field
             label="Número"
             type="number"
@@ -90,7 +90,7 @@
             v-model.number="controller.curriculoModel.value.endereco[0].numero"
           ></v-text-field>
         </v-col>
-        <v-col cols="2">
+        <v-col cols="12" sm="2">
           <v-text-field
             label="CEP"
             variant="underlined"
@@ -101,7 +101,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="Complemento"
             variant="underlined"
@@ -109,7 +109,7 @@
             v-model="controller.curriculoModel.value.endereco[0].complemento"
           ></v-text-field>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="Bairro"
             variant="underlined"
@@ -117,7 +117,7 @@
             v-model="controller.curriculoModel.value.endereco[0].bairro"
           ></v-text-field>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="Cidade"
             variant="underlined"
@@ -125,7 +125,7 @@
             v-model="controller.curriculoModel.value.endereco[0].cidade"
           ></v-text-field>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-text-field
             label="UF"
             variant="underlined"
@@ -135,7 +135,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <v-text-field
             label="Site pessoal"
             variant="underlined"
@@ -145,12 +145,12 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <telefones-cad :controller="controller" />
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Possui filhos?"
             density="compact"
@@ -159,7 +159,7 @@
             v-model="controller.curriculoModel.value.possuiFilhos"
           ></v-switch>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Quantos filhos?"
             type="number"
@@ -172,7 +172,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Possui CNH?"
             density="compact"
@@ -181,7 +181,7 @@
             v-model="controller.curriculoModel.value.possuiCNH"
           ></v-switch>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-select
             label="Categoria CNH"
             item-value="value"
@@ -195,7 +195,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Portador de deficiência?"
             density="compact"
@@ -204,7 +204,7 @@
             v-model="controller.curriculoModel.value.pcd"
           ></v-switch>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Descreva sua deficiência"
             variant="underlined"
@@ -215,7 +215,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Coloca-se a disposição para entrevistas?"
             density="compact"
@@ -228,7 +228,7 @@
             v-model="controller.curriculoModel.value.disponivelEntrevista"
           ></v-switch>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-switch
             label="Disponível para viagens empresariais?"
             density="compact"
@@ -241,7 +241,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <v-text-field
             label="Foto"
             placeholder="Coloque a url da sua imagem aqui..."
@@ -252,7 +252,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" sm="12">
           <v-textarea
             label="Sobre mim"
             density="compact"

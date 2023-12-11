@@ -17,7 +17,7 @@
 
     <v-card-text>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Graduação"
             variant="underlined"
@@ -25,7 +25,7 @@
             v-model="item.graduacao"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Nome curso"
             variant="underlined"
@@ -33,7 +33,7 @@
             v-model="item.nomeCurso"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Instituição"
             variant="underlined"
@@ -41,7 +41,7 @@
             v-model="item.instituicao"
           ></v-text-field>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-text-field
             label="Cidade"
             variant="underlined"
