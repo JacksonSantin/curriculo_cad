@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
 import moment from "moment/min/moment-with-locales";
+import "toastify-js/src/toastify.css"
 
 loadFonts();
 

@@ -122,7 +122,7 @@
             label="Cidade"
             variant="underlined"
             density="compact"
-            v-model="controller.curriculoModel.value.endereco[0].complemento"
+            v-model="controller.curriculoModel.value.endereco[0].cidade"
           ></v-text-field>
         </v-col>
         <v-col cols="3">
@@ -130,8 +130,17 @@
             label="UF"
             variant="underlined"
             density="compact"
-            v-maska:[options]
             v-model="controller.curriculoModel.value.endereco[0].uf"
+          ></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <v-text-field
+            label="Site pessoal"
+            variant="underlined"
+            density="compact"
+            v-model="controller.curriculoModel.value.site"
           ></v-text-field>
         </v-col>
       </v-row>
@@ -233,16 +242,13 @@
       </v-row>
       <v-row>
         <v-col cols="12">
-          <v-file-input
+          <v-text-field
             label="Foto"
-            accept="image/png, image/jpeg, image/bmp"
-            prepend-icon="mdi-camera"
-            density="compact"
+            placeholder="Coloque a url da sua imagem aqui..."
             variant="underlined"
-            show-size
-            :rules="[controller.regras.imageSize]"
+            density="compact"
             v-model="controller.curriculoModel.value.foto"
-          ></v-file-input>
+          ></v-text-field>
         </v-col>
       </v-row>
       <v-row>

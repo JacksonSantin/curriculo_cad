@@ -1,6 +1,5 @@
 class Idiomas {
-  constructor({ id = 0, idioma = 0, nivel = 0 }) {
-    this.id = id;
+  constructor({ idioma = "", nivel = 0 }) {
     this.idioma = idioma;
     this.nivel = nivel;
   }

@@ -1,0 +1,86 @@
+{
+    "nome": "Jackson Dhanyel Santin",
+    "nacionalidade": "Brasileiro",
+    "emailPrincipal": "jackdhanyelsn@gmail.com",
+    "foto": "",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non feugiat nunc, quis varius nibh. Donec sed sem nunc. Vestibulum sodales arcu eros, et fermentum felis facilisis quis. Duis sit amet arcu lobortis, convallis mi id, pharetra augue. Phasellus in ipsum rhoncus massa dignissim blandit. Sed tempus auctor turpis, nec malesuada felis dignissim eu. Donec tempor eros sed nulla elementum porta. Aenean ut convallis tortor, nec mollis erat. In vulputate, purus ut convallis vehicula, nisl diam rutrum arcu, et eleifend leo velit sed sem. Vivamus molestie neque a vulputate vehicula.",
+    "objetivo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non feugiat nunc, quis varius nibh. Donec sed sem nunc. Vestibulum sodales arcu eros, et fermentum felis facilisis quis. Duis sit amet arcu lobortis, convallis mi id, pharetra augue. Phasellus in ipsum rhoncus massa dignissim blandit. Sed tempus auctor turpis, nec malesuada felis dignissim eu.",
+    "atuacao": "Suspendisse a est non urna pretium sagittis. Vivamus feugiat, lectus pretium aliquet sollicitudin, urna urna condimentum arcu, vitae pellentesque massa nisl eget diam. Vestibulum sit amet commodo erat. Morbi tempor nulla ut orci dapibus, sit amet fringilla augue rhoncus. Praesent sed porta urna. Suspendisse rhoncus convallis quam scelerisque malesuada. Quisque ornare elit quis ante hendrerit egestas. Quisque nec ullamcorper lacus. Praesent suscipit consectetur feugiat. Phasellus non ipsum neque. Donec ultricies porttitor eleifend. Maecenas fermentum est ultrices, laoreet neque et, pretium magna. Sed id est fringilla, maximus justo maximus, efficitur odio.",
+    "dtNascimento": "1999-09-09",
+    "descricaoDeficiencia": "",
+    "site": "https://curriculum-vitae-jacksonsantin.vercel.app/",
+    "possuiFilhos": true,
+    "disponivelEntrevista": true,
+    "possuiCNH": true,
+    "disponivelViagens": true,
+    "pcd": false,
+    "sexo": 1,
+    "estadoCivil": 1,
+    "categoriaCNH": 4,
+    "idade": "24",
+    "qtdFilhos": 1,
+    "endereco": [
+        {
+            "rua": "Rua Duque de Caxias",
+            "numero": 370,
+            "complemento": "Ap. 601",
+            "bairro": "Centro",
+            "cidade": "Marau",
+            "uf": "RS",
+            "cep": "99150-000"
+        }
+    ],
+    "telefones": [
+        {
+            "tipo": 1,
+            "numero": "(54) 99626-2629"
+        },
+        {
+            "tipo": 3,
+            "numero": "(54) 3342-2438"
+        }
+    ],
+    "formacao": [
+        {
+            "graduacao": "Ensino Médio Completo",
+            "nomeCurso": "Escola",
+            "instituicao": "Instituto Estadual Santo Tomás de Aquino",
+            "cidade": "Marau"
+        },
+        {
+            "graduacao": "Ensino Superior Completo",
+            "nomeCurso": "Análise e Desenvolvimento de Sistemas",
+            "instituicao": "Universidade de Passo Fundo",
+            "cidade": "Passo Fundo"
+        }
+    ],
+    "experienciaProfissional": [
+        {
+            "nomeExperiencia": "Vendedor",
+            "localTrablhado": "Ferragens União Colonial",
+            "anoInicio": "2017-12-07",
+            "anoFim": "2018-12-08",
+            "atual": false
+        },
+        {
+            "nomeExperiencia": "Suporte/desenvolvedor",
+            "localTrablhado": "Vipweb/Sigasoft",
+            "anoInicio": "2018-12-08",
+            "anoFim": "2022-12-08",
+            "atual": false
+        },
+        {
+            "nomeExperiencia": "Desenvolvedor",
+            "localTrablhado": "CGI Software de Gestão",
+            "anoInicio": "2022-12-08",
+            "anoFim": "",
+            "atual": true
+        }
+    ],
+    "idiomas": [
+        {
+            "idioma": "Inglês",
+            "nivel": 2
+        }
+    ]
+}

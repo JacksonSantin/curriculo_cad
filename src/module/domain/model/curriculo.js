@@ -15,6 +15,7 @@ class Curriculo {
     atuacao = "",
     dtNascimento = "",
     descricaoDeficiencia = "",
+    site = "",
     possuiFilhos = false,
     disponivelEntrevista = false,
     possuiCNH = false,
@@ -40,6 +41,7 @@ class Curriculo {
     this.atuacao = atuacao;
     this.dtNascimento = dtNascimento;
     this.descricaoDeficiencia = descricaoDeficiencia;
+    this.site = site;
     this.possuiFilhos = possuiFilhos;
     this.disponivelEntrevista = disponivelEntrevista;
     this.possuiCNH = possuiCNH;

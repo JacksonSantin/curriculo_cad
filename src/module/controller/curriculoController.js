@@ -13,6 +13,7 @@ import {
   cbbTipoFone,
 } from "../const/formCbb";
 import { rules } from "@/core/rules";
+import Toastify from "toastify-js";
 
 const curriculoController = (geraRelatorioUseCase) => () => {
   const items = ref(steps);
@@ -24,6 +25,7 @@ const curriculoController = (geraRelatorioUseCase) => () => {
   const comboTipoFone = ref(cbbTipoFone);
   const comboNivelIdioma = ref(cbbNivelIdioma);
   const menu = ref(false);
+  const carregando = ref(false);
   const datePicker = ref("");
 
   const alteraArray = (nome, indice = 0) => {
@@ -40,8 +42,33 @@ const curriculoController = (geraRelatorioUseCase) => () => {
     };
   };
 
-  const gerarCurriculo = () => {
-    console.log(curriculoModel.value);
+  const gerarCurriculo = async () => {
+    try {
+      carregando.value = true;
+
+      const template = {name: "/curriculo/model"}
+      const data = curriculoModel.value
+
+      await geraRelatorioUseCase({
+        template,
+        data
+      })
+
+    } catch (error) {
+      Toastify({
+        text: error,
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        style: {
+          background: "red",
+          borderRadius: "50px",
+        },
+      }).showToast();
+    } finally {
+      carregando.value = false;
+    }
   };
 
   return {
@@ -54,9 +81,10 @@ const curriculoController = (geraRelatorioUseCase) => () => {
     comboTipoFone,
     comboNivelIdioma,
     menu,
+    carregando,
     datePicker,
     alteraArray,
-    gerarCurriculo
+    gerarCurriculo,
   };
 };
 

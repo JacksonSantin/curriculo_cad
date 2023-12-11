@@ -7,7 +7,7 @@
 
   <v-card
     v-for="(item, index) in controller.curriculoModel.value.formacao"
-    :key="`${item.nomeCurso}_${index}`"
+    :key="index"
     class="my-6"
     outlined
   >

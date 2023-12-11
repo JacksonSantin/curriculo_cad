@@ -1,6 +1,5 @@
 class Telefones {
-  constructor({ id = 0, tipo = 0, numero = "" }) {
-    this.id = id;
+  constructor({ tipo = 0, numero = "" }) {
     this.tipo = tipo;
     this.numero = numero;
   }
