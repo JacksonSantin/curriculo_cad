@@ -40,18 +40,18 @@
         <v-col cols="12" sm="6">
           <v-text-field
             label="Ano de início"
-            type="date"
             variant="underlined"
             density="compact"
+            v-maska:[data]
             v-model="item.anoInicio"
           ></v-text-field>
         </v-col>
         <v-col cols="12" sm="6">
           <v-text-field
             label="Ano de término"
-            type="date"
             variant="underlined"
             density="compact"
+            v-maska:[data]
             :disabled="item.atual"
             v-model="item.anoFim"
           ></v-text-field>
@@ -84,6 +84,8 @@
 </template>
 
 <script setup>
+import { vMaska } from "maska";
+const data = { mask: "##/##/####" };
 defineProps({
   controller: {
     type: Object,

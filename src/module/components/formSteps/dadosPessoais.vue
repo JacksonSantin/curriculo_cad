@@ -54,9 +54,9 @@
         <v-col cols="12" sm="3">
           <v-text-field
             label="Data de nascimento"
-            type="date"
             variant="underlined"
             density="compact"
+            v-maska:[dtNasc]
             v-model="controller.curriculoModel.value.dtNascimento"
           ></v-text-field>
         </v-col>
@@ -271,6 +271,7 @@
 import { vMaska } from "maska";
 import TelefonesCad from "./cadTelefones/telefones.vue";
 const options = { mask: "#####-###" };
+const dtNasc = { mask: "##/##/####" };
 defineProps({
   controller: {
     type: Object,
